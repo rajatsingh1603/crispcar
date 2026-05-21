@@ -421,7 +421,7 @@ function PricingSection() {
   const plans = [
     {
       name: "Basic",
-      price: "29",
+      price: "1,200",
       period: "month",
       description: "Perfect for single car owners",
       features: [
@@ -434,23 +434,8 @@ function PricingSection() {
       popular: false
     },
     {
-      name: "Pro",
-      price: "49",
-      period: "month",
-      description: "Best value for regular users",
-      features: [
-        "Daily exterior cleaning",
-        "Up to 2 vehicles",
-        "HD photo proof gallery",
-        "Priority scheduling",
-        "In-app chat support",
-        "Weekly detail reports"
-      ],
-      popular: true
-    },
-    {
       name: "Premium",
-      price: "79",
+      price: "1,500",
       period: "month",
       description: "For car enthusiasts",
       features: [
@@ -461,7 +446,7 @@ function PricingSection() {
         "Dedicated cleaner",
         "Monthly deep clean included"
       ],
-      popular: false
+      popular: true
     }
   ];
 
@@ -479,7 +464,7 @@ function PricingSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-6 max-w-3xl mx-auto">
           {plans.map((plan, index) => (
             <AnimatedSection key={plan.name} delay={index * 150}>
               <Card 
@@ -497,7 +482,7 @@ function PricingSection() {
                 </CardHeader>
                 <CardContent className="text-center pb-6">
                   <div className="mt-4 mb-6" data-testid={`text-plan-price-${plan.name.toLowerCase()}`}>
-                    <span className="text-5xl font-bold text-foreground">${plan.price}</span>
+                    <span className="text-5xl font-bold text-foreground">₹{plan.price}</span>
                     <span className="text-muted-foreground">/{plan.period}</span>
                   </div>
                   <ul className="space-y-3 text-left">
@@ -530,19 +515,19 @@ function PricingSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Rajat Singh",
       role: "Marketing Manager",
       rating: 5,
       quote: "DriveClean has been a game-changer for me. My car is always spotless without me lifting a finger. The photo proof feature gives me peace of mind."
     },
     {
-      name: "Michael Chen",
+      name: "Karan Raj",
       role: "Software Engineer",
       rating: 5,
       quote: "I was skeptical at first, but the quality is incredible. My assigned cleaner is always on time and does an amazing job. Highly recommend!"
     },
     {
-      name: "Emily Rodriguez",
+      name: "Deepak Singh Mehta",
       role: "Real Estate Agent",
       rating: 5,
       quote: "As someone who meets clients daily, a clean car is essential. DriveClean saves me hours every week and my car looks showroom-ready every day."
