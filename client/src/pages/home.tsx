@@ -20,6 +20,7 @@ import {
   Sun
 } from "lucide-react";
 import { SiApple, SiGoogleplay } from "react-icons/si";
+import crispCarLogo from "@assets/crispycar.com_logo_1780854007619.png";
 
 function useInView() {
   const ref = useRef<HTMLDivElement>(null);
@@ -131,11 +132,8 @@ function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4 h-16 md:h-20">
-          <a href="/" className="flex items-center gap-2" data-testid="link-logo">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <Car className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">CrispCar</span>
+          <a href="/" className="flex items-center" data-testid="link-logo">
+            <img src={crispCarLogo} alt="CrispCar" className="h-10 w-auto" />
           </a>
           
           <nav className="hidden md:flex items-center gap-6" data-testid="nav-main">
@@ -691,11 +689,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <a href="/" className="flex items-center gap-2 mb-4" data-testid="link-footer-logo">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Car className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-background">CrispCar</span>
+            <a href="/" className="flex items-center mb-4" data-testid="link-footer-logo">
+              <img src={crispCarLogo} alt="CrispCar" className="h-10 w-auto" />
             </a>
             <p className="text-background/70 mb-6" data-testid="text-footer-tagline">
               Daily car cleaning service on a monthly subscription. Making car care effortless.
