@@ -735,7 +735,7 @@ function Footer() {
             <ul className="space-y-3">
               <li className="text-background/70" data-testid="text-contact-email">founder@crispcar.com</li>
               <li className="text-background/70" data-testid="text-contact-phone">7060489193</li>
-              <li className="text-background/70" data-testid="text-contact-location">San Francisco, CA</li>
+              <li className="text-background/70" data-testid="text-contact-location">Sector 70A, Gurugram, Haryana, 122101</li>
             </ul>
             <div className="mt-6 flex flex-col gap-2">
               <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors" data-testid="link-footer-appstore">
