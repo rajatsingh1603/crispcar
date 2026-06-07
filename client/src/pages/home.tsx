@@ -419,7 +419,7 @@ function PricingSection() {
   const plans = [
     {
       name: "Basic",
-      price: "1,200",
+      price: "999",
       period: "month",
       description: "Perfect for single car owners",
       features: [
@@ -433,7 +433,7 @@ function PricingSection() {
     },
     {
       name: "Premium",
-      price: "1,500",
+      price: "1,499",
       period: "month",
       description: "For car enthusiasts",
       features: [
