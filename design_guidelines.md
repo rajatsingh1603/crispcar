@@ -1,4 +1,4 @@
-# DriveClean Landing Page - Design Guidelines
+# CrispCar Landing Page - Design Guidelines
 
 ## Design Approach
 **System Selected:** Modern SaaS/Startup design pattern inspired by products like Stripe, Linear, and modern app landing pages.

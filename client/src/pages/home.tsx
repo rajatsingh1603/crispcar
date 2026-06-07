@@ -135,7 +135,7 @@ function Header() {
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
               <Car className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">DriveClean</span>
+            <span className="text-xl font-bold text-foreground">CrispCar</span>
           </a>
           
           <nav className="hidden md:flex items-center gap-6" data-testid="nav-main">
@@ -234,7 +234,7 @@ function HeroSection() {
                   <div className="bg-muted px-6 py-4 flex items-center justify-between gap-2 border-b border-border">
                     <div className="flex items-center gap-2">
                       <Car className="w-5 h-5 text-primary" />
-                      <span className="font-semibold text-sm text-foreground">DriveClean</span>
+                      <span className="font-semibold text-sm text-foreground">CrispCar</span>
                     </div>
                     <Badge variant="secondary" className="text-xs">Pro Plan</Badge>
                   </div>
@@ -322,7 +322,7 @@ function HowItWorksSection() {
             <span className="text-primary">Spotless Car</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-how-it-works-description">
-            Getting started with DriveClean is easy. Follow these simple steps and enjoy a clean car every day.
+            Getting started with CrispCar is easy. Follow these simple steps and enjoy a clean car every day.
           </p>
         </AnimatedSection>
 
@@ -393,7 +393,7 @@ function FeaturesSection() {
             <span className="text-primary">Perfectly Clean Car</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-features-description">
-            DriveClean combines convenience with quality to deliver the best car cleaning experience.
+            CrispCar combines convenience with quality to deliver the best car cleaning experience.
           </p>
         </AnimatedSection>
 
@@ -518,7 +518,7 @@ function TestimonialsSection() {
       name: "Rajat Singh",
       role: "Marketing Manager",
       rating: 5,
-      quote: "DriveClean has been a game-changer for me. My car is always spotless without me lifting a finger. The photo proof feature gives me peace of mind."
+      quote: "CrispCar has been a game-changer for me. My car is always spotless without me lifting a finger. The photo proof feature gives me peace of mind."
     },
     {
       name: "Karan Raj",
@@ -530,7 +530,7 @@ function TestimonialsSection() {
       name: "Deepak Singh Mehta",
       role: "Real Estate Agent",
       rating: 5,
-      quote: "As someone who meets clients daily, a clean car is essential. DriveClean saves me hours every week and my car looks showroom-ready every day."
+      quote: "As someone who meets clients daily, a clean car is essential. CrispCar saves me hours every week and my car looks showroom-ready every day."
     }
   ];
 
@@ -544,7 +544,7 @@ function TestimonialsSection() {
             of Car Owners
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-testimonials-description">
-            See what our customers have to say about their DriveClean experience.
+            See what our customers have to say about their CrispCar experience.
           </p>
         </AnimatedSection>
 
@@ -665,7 +665,7 @@ function CTASection() {
                 Ready for a Spotless Car?
               </h2>
               <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto" data-testid="text-cta-description">
-                Join thousands of happy car owners. Download DriveClean today and experience the convenience of daily car cleaning.
+                Join thousands of happy car owners. Download CrispCar today and experience the convenience of daily car cleaning.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" className="gap-2" data-testid="button-cta-ios">
@@ -695,7 +695,7 @@ function Footer() {
               <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
                 <Car className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-background">DriveClean</span>
+              <span className="text-xl font-bold text-background">CrispCar</span>
             </a>
             <p className="text-background/70 mb-6" data-testid="text-footer-tagline">
               Daily car cleaning service on a monthly subscription. Making car care effortless.
@@ -738,8 +738,8 @@ function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-background" data-testid="text-footer-contact-title">Contact</h3>
             <ul className="space-y-3">
-              <li className="text-background/70" data-testid="text-contact-email">support@driveclean.app</li>
-              <li className="text-background/70" data-testid="text-contact-phone">1-800-DRIVECLEAN</li>
+              <li className="text-background/70" data-testid="text-contact-email">founder@crispcar.com</li>
+              <li className="text-background/70" data-testid="text-contact-phone">7060489193</li>
               <li className="text-background/70" data-testid="text-contact-location">San Francisco, CA</li>
             </ul>
             <div className="mt-6 flex flex-col gap-2">
@@ -756,7 +756,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-background/10 text-center text-background/50 text-sm" data-testid="text-copyright">
-          <p>&copy; {new Date().getFullYear()} DriveClean. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} CrispCar. All rights reserved.</p>
         </div>
       </div>
     </footer>
