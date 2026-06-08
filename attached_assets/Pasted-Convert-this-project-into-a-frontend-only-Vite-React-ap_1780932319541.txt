@@ -1,0 +1,76 @@
+Convert this project into a frontend-only Vite React application.
+
+Requirements:
+
+1. Remove all backend/server-related code and dependencies.
+   - Delete the entire `server/` directory.
+   - Delete backend build scripts and Express-related code.
+   - Remove Express, Passport, PostgreSQL, Drizzle ORM, WebSocket, Session, and all server-only dependencies from package.json.
+
+2. Keep only the frontend application.
+   - Preserve everything inside `client/src`.
+   - Preserve `client/public`.
+   - Preserve UI components, hooks, pages, assets, and styling.
+   - Preserve Tailwind CSS configuration.
+   - Preserve TypeScript configuration required by the frontend.
+
+3. Update Vite configuration.
+   - Keep `client` as the Vite root.
+   - Change build output to standard Vite output:
+     ```ts
+     build: {
+       outDir: "dist"
+     }
+     ```
+   - Remove any Replit-specific backend integrations that are not needed for production.
+
+4. Create a clean frontend-only package.json.
+   - Include only React, Vite, TypeScript, Tailwind, React Query, Wouter, Framer Motion, Radix UI, and other frontend dependencies actually used by the client.
+   - Remove all backend dependencies.
+
+5. Fix imports.
+   - Preserve aliases such as:
+     - @
+     - @shared
+     - @assets
+   - Ensure the project builds successfully after cleanup.
+
+6. API calls.
+   - Replace hardcoded API URLs with:
+     ```env
+     VITE_API_URL=
+     ```
+   - Use:
+     ```ts
+     import.meta.env.VITE_API_URL
+     ```
+   - Keep API service functions but remove any server implementation.
+
+7. Final result.
+   The project structure should look like:
+
+   project/
+   ├── src/
+   ├── public/
+   ├── shared/
+   ├── package.json
+   ├── vite.config.ts
+   ├── tsconfig.json
+   ├── tailwind.config.ts
+   ├── postcss.config.js
+   └── index.html
+
+8. Verify that:
+   - npm install works
+   - npm run dev works
+   - npm run build succeeds
+   - The generated app is ready for deployment on Vercel using:
+     - Framework: Vite
+     - Build Command: npm run build
+     - Output Directory: dist
+
+After completing the cleanup, show me:
+1. Updated package.json
+2. Updated vite.config.ts
+3. Final project structure
+4. Any remaining environment variables required.
